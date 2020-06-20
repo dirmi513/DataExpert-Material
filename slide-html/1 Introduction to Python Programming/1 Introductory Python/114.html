@@ -1,0 +1,65 @@
+<h2 class="slide-header">Python Syntax</h2>
+
+<p>
+    Any natural language, such as English, has certain
+    <a href="https://www.englishclub.com/grammar/" target="_blank"> grammar rules</a>
+    that you must follow in order to construct valid sentences. This is also the case for all programming languages.
+    Each unique programming language is analogous to a human language, and requires adherence to specific grammar,
+    also known as syntax, rules. These syntax rules define whether or not your code is properly written, and if it is not,
+    you will most definitely get a <code>SyntaxError</code> when trying to execute the code. Some of Python's syntax rules
+    that you have already come across (explicitly and implicitly) are that:
+</p>
+
+<ul>
+    <li>
+        Every distinct command must be separated by a new line in your source code.
+        <ul>
+            <li>
+                In the previous slide, we showed you the output (<code>SyntaxError</code>) of trying to execute code that
+                had two consecutive <code>print()</code> functions separated by a space instead of a new line.
+            </li>
+        </ul>
+    </li>
+
+    <li>
+        To properly utilize a function within your source code, it must be written in the following format:
+        <code>name_of_function(function arguments)</code>.
+        <ul>
+            <li>
+                Lets use <code>print(5 + 5)</code> as an example. The function's name is <code>print</code>, followed by
+                an open parenthesis <code>(</code>, the arguments passed to the function (which we will cover in a later lesson)
+                <code>5 + 5</code>, and finally a close parenthesis <code>)</code>. What would happen if we used a close square
+                bracket instead of parenthesis?
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<div align="center">
+    <img src="https://s3.amazonaws.com/dataexpert.images/Introduction+to+Python+Programming+for+Data+Science/Introductory+Python/4+-+Syntax/syntax_1.png" style="width:421px; height:148px;">
+</div>
+
+<br>
+
+<p>
+    As you can see, Python throws a <code>SyntaxError</code>. Now, what if we accidentally used a symbol that is not a valid
+    arithmetic operator?
+</p>
+
+<div align="center">
+    <img src="https://s3.amazonaws.com/dataexpert.images/Introduction+to+Python+Programming+for+Data+Science/Introductory+Python/4+-+Syntax/syntax_2.png" style="width:421px; height:139px;">
+</div>
+
+<br>
+
+<p>
+    Another <code>SyntaxError</code>, as you might have expected. In both of the examples above, Python tried pointing us
+    to the exact location of the syntax error in our source code.
+
+    <br><br>
+
+    To avoid syntax errors, you must be diligent when writing code. We have just covered a few of Python's various syntax rules,
+    but will continue to highlight proper Python syntax as new concepts are introduced. Similar to speaking and writing in a natural
+    language, as you become a more experienced coder, writing syntactically accurate code gets easier. And for the times when there
+    are syntax errors in your source code, Python will throw a <code>SyntaxError</code>, and try to point you to where the error occurred.
+</p>

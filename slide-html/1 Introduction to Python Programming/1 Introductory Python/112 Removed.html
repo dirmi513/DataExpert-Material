@@ -1,0 +1,55 @@
+<p>
+    In addition to the five basic arithmetic operators above, Python supports two other, less commonly known arithmetic operators:
+</p>
+
+<ul>
+    <li> Floor Division Operator: <code> // </code>
+        <ul>
+            <li>
+                This operator returns the maximum number of times that one number, lets call it x, can be evenly divided
+                by another number, y. When we say evenly, we mean without anything left over.
+                <ul class="code-list">
+                    <li>
+                        <code>10 // 2</code> would return 5, as 10 can be evenly divided by 2 only 5 times: 10 = 2 x 5
+                    </li>
+
+                    <li>
+                        <code>10 // 3</code> would return 3, as 10 can be evenly divided by 3 a maximum of 3 times, and
+                        there would be a remainder of 1: 10 = (3 x 3) + 1</li><li><code>5 // 10</code> would return 0.
+                    This is a tricky one, but the reasoning is that 5 cannot be evenly divided by 10 any number of times.
+                    Another way to put is that there is no integer greater than 0 for which 10 times that integer would get
+                    you a value less than or equal to 5. So for the floor division operator, if the number to the right is
+                    greater than the number to the left, the result will always be 0.
+                </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li> Modulus Operator: <code> % </code>
+        <ul>
+            <li>
+                In contrast to the floor division operator, this operator returns the remainder after attempting to
+                divide one number, x, by another number, y. Although, if x is less than y, then the result would just be
+                x itself.
+                <ul class="code-list">
+                    <li>
+                        <code>10 % 2</code> would return 0 since there is no remainder when dividing 10 by 2.
+                    </li>
+
+                    <li>
+                        <code>10 % 3</code> would return 1, as there is a remainder of 1 when dividing 10 by 3.
+                    </li>
+
+                    <li>
+                        <code>5 % 10</code> would return 5 because 5 is less than 10.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<p>
+    The rules above for the floor division and modulus operators will always hold when <strong>both</strong> operands
+    are positive. Things get weird when you start using negative numbers, and we highly doubt that you will ever have
+    to use negative numbers with these two operators. <br><br>

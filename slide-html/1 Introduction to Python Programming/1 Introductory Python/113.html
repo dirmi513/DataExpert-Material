@@ -1,7 +1,8 @@
 <h2 class="slide-header">Print Function</h2>
 
 <p>
-    For the previous slide's coding challenge, the command that you had to execute was <code>print(20 * 3 + 150)</code>.
+    For the previous slide's coding challenge, the command that you had Python execute was <code>print(20 * 3 +
+    150)</code>.
     This command utilized Python’s built-in <code>print()</code> function (we will explore functions in great depth later on).
     What happened behind the scenes when you executed <code>print(20 * 3 + 150)</code>?
 
@@ -25,13 +26,14 @@
 
 <p>
     If you had just entered <code>20 * 3 + 150</code> into the text editor without using the <code>print()</code> function,
-    Python would still perform the calculations behind the scenes, but result would <b>not</b> be displayed on the screen.
+    Python would still perform the calculations behind the scenes, but the result would <b>not</b> be displayed on the
+    screen.
     That is why we use the <code>print()</code> function.
 
     <br><br>
-
-    Every distinct command in your source code <strong>must</strong> be separated by a new line. For example, if you want
-    to use the print function more than once:
+    <code>print(20 * 3 + 150)</code> is a single Python command. If you want Python to execute multiple, distinct
+    commands, each command <strong>must</strong> be separated by a new line on your source code. For example, if you
+    want to use the print function more than once:
 </p>
 
 <div align="center ">
@@ -44,23 +46,25 @@
 
 <ul>
     <li>
-        There are multiple, distinct arithmetic expressions, and each one is contained in a separate <code>print()</code> function.
+        There are multiple, unique arithmetic expressions, and each one is contained in a separate <code>print()</code>
+        function.
     </li>
 
     <li>
         Each time the <code>print()</code> function is used, it is on a new line in the source code editor. Please note
         that it does not matter if the next <code>print()</code> function is on the line directly below the current one,
-        or five lines down, as long as it is on a new line.
+        or five lines down, as long as it is on a new line with <strong>no</strong> indentation.
     </li>
 
     <li>
-        The output of executing the source code displays the resulting value of each expression in the same order as the
-        commands are written in the source code. Python executes your source code from top to bottom.
+        When you execute the source code, Python will "print" the resulting values of each arithmetic expression, and
+        the order is based on the order of the commands in the source code. Python executes your source code from top
+        to bottom.
     </li>
 </ul>
 
 <p>
-    If there are multiple <code>print()</code> functions on the same line in the source code, Python will display the
+    If there are multiple <code>print()</code> expressions on the same line in the source code, Python will display the
     following error message when we try to execute the code:
 </p>
 
@@ -94,7 +98,7 @@
     <b>distinct</b> arithmetic expressions on the screen:
 </p>
 
-<ul>
+<ul class="code-list">
     <li> <code>(5 * 4.5) + 15</code> </li>
     <li> <code>10 / 3</code> </li>
     <li> <code>3 - 274.7 + 54</code> </li>
